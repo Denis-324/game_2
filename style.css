@@ -1,0 +1,199 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.game {
+  height: 100vh;
+  background-color: rgb(27, 25, 25);
+}
+.game__bg {
+  height: 100vh;
+  width: 1100px;
+  margin: 0 auto;
+}
+.game__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.game__monster {
+  position: absolute;
+  top: 50px;
+  left: 110px;
+  z-index: 10;
+  width: 500px;
+  height: 500px;
+}
+.game__man {
+  position: absolute;
+  top: 30px;
+  right: 90px;
+  z-index: 10;
+  width: 500px;
+  height: 500px;
+}
+.game__man img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.game__monster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.game__health_man {
+  position: absolute;
+  top: 20px;
+  right: 65px;
+  font-size: 50px;
+  color: rgb(245, 237, 237);
+}
+.game__health_monster {
+  position: absolute;
+  top: 20px;
+  left: 65px;
+  font-size: 50px;
+  color: rgb(245, 237, 237);
+}
+.game__btns {
+  position: absolute;
+  top: 130px;
+  right: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 11;
+}
+.game__btn {
+  width: 180px;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 0 10px 0;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease 0s;
+}
+.game__btn:hover {
+  background-color: rgb(148, 143, 143);
+}
+.game__btn_start {
+  width: 180px;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 0 10px 0;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease 0s;
+  position: absolute;
+  bottom: 10px;
+  left: 5px;
+}
+.game__btn_start:hover {
+  background-color: rgb(148, 143, 143);
+}
+.game__info {
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px 0 10px 0;
+  border-radius: 6px;
+  transition: all 0.3s ease 0s;
+  position: absolute;
+  top: 45px;
+  left: 250px;
+  background-color: rgb(233, 224, 224);
+}
+
+.game__btn_monster {
+  width: 180px;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 0 10px 0;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease 0s;
+  position: absolute;
+  top: 200px;
+  left: 5px;
+  z-index: 11;
+}
+.game__btn_monster:hover {
+  background-color: rgb(148, 143, 143);
+}
+.btn_active {
+  box-shadow: 0px 2px 13px 8px #2c6909;
+}
+.disabled {
+  box-shadow: 0px 2px 13px 8px #690909;
+}
+.game__description {
+  position: absolute;
+  z-index: 11;
+  bottom: 100px;
+  right: 50%;
+
+  transform: translate(50%, 50%);
+  color: aliceblue;
+  font-size: 25px;
+}
+
+.game__result {
+  position: absolute;
+
+  top: 100px;
+  right: 50%;
+
+  width: 450px;
+  text-align: center;
+
+  padding: 25px 0 25px 0;
+
+  border-radius: 6px;
+
+  z-index: 12;
+
+  transform: translate(50%, 50%);
+  color: rgb(31, 33, 34);
+  background-color: rgb(236, 225, 225);
+  font-size: 40px;
+}
+
+.game__difficult-title {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 12;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(31, 33, 34, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: rgb(236, 225, 225);
+}
+
+.game__difficult-bg {
+  position: absolute;
+  z-index: 12;
+  font-size: 30px;
+  text-align: center;
+  top: 150px;
+  color: rgb(236, 225, 225);
+}
+
+.dif-par {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
