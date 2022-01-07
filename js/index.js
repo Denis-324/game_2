@@ -170,7 +170,8 @@ const getStart = () => {
     setTimeout(function () {
       location.reload();
     }, 4000);
-  } else if (healthManVar <= 0 && healthMonsterVar <= 0) {
+  }
+  if (healthManVar <= 0 && healthMonsterVar <= 0) {
     let result = document.createElement("div");
     result.classList.add("game__result");
     result.innerHTML = `Игра закончена! Взаимное уничтожение!`;
